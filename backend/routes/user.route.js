@@ -4,6 +4,7 @@ import { protectedRoute } from '../middlewares/protectRoute.js'
 
 const router = express.Router()
 
-router.get('/',protectedRoute, fetchUserProfile)
+router.get('/', protectedRoute, fetchUserProfile)
+router.get('/allusers', protectedRoute, fetchAllUsers)
 
 export default router
